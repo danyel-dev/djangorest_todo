@@ -8,7 +8,7 @@ from core.views import ListViewSet, ItemViewSet
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
-router.register(r'Lists', ListViewSet)
+router.register(r'Lists', ListViewSet, basename='list')
 router.register(r'Items', ItemViewSet)
 
 
